@@ -1,0 +1,19 @@
+{
+  "name": "preentrega3roldan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laroldan/PreEntrega3-Roldan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laroldan/PreEntrega3-Roldan/issues"
+  },
+  "homepage": "https://github.com/laroldan/PreEntrega3-Roldan#readme"
+}
