@@ -1,0 +1,63 @@
+.logo {
+  width: 60px;
+  padding: 10px 10px 5px 5px;
+}
+
+.logo__social {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  padding-left: 2px;
+}
+
+.resizeTA {
+  resize: none;
+}
+
+.bounce_1 {
+  animation-name: bounce1;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+.bounce_2 {
+  animation-name: bounce2;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+header {
+  background-color: $first-color;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  background-color: $second-color;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+section {
+  background-color: $third-color;
+  background-image: url(../img/waves/wave3.svg), url(../img/waves/wave2.svg),
+    url(../img/logo/logo2.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top, bottom, center center;
+  background-size: auto, auto, 20vw;
+}
+
+.container__alone {
+  height: 30px;
+  background-color: $second-color;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+footer {
+  background-color: #f1e5cf;
+}

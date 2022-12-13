@@ -1,0 +1,28 @@
+.section__image {
+  border: solid black 1px;
+  width: 250px;
+  animation-name: Zoomimg;
+  animation-duration: 1s;
+  animation-delay: 50ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+.section__image2 {
+  width: 500px;
+  filter: grayscale(50%);
+  animation-name: Zoomimg;
+  animation-duration: 1s;
+  animation-delay: 50ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+
+  &:hover {
+    filter: none;
+  }
+}
+
+.section__preg {
+  background-color: $third-color;
+  border: solid black 2px;
+}

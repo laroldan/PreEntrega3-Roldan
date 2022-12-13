@@ -1,0 +1,46 @@
+@keyframes bounce1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+@keyframes Zoomimg {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
