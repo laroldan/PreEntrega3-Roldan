@@ -2,3 +2,22 @@ $first-color: #f1e5cf;
 $second-color: #bcbcbc;
 $third-color: whitesmoke;
 $thefont-font-family: "Oswald", sans-serif;
+
+$fontweights: (
+  "regular": 400,
+  "medium": 600,
+  "bold": 700,
+);
+
+$animation: (
+  "duration": 1s,
+  "duration2": 450ms,
+  "delay": 1s,
+  "timing": linear,
+  "fill": backwards,
+);
+
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}

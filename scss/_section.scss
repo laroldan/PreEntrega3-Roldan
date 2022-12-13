@@ -2,20 +2,16 @@
   border: solid black 1px;
   width: 250px;
   animation-name: Zoomimg;
-  animation-duration: 1s;
   animation-delay: 50ms;
-  animation-timing-function: linear;
-  animation-fill-mode: backwards;
+  @extend .anima;
 }
 
 .section__image2 {
   width: 500px;
   filter: grayscale(50%);
   animation-name: Zoomimg;
-  animation-duration: 1s;
   animation-delay: 50ms;
-  animation-timing-function: linear;
-  animation-fill-mode: backwards;
+  @extend .anima;
 
   &:hover {
     filter: none;

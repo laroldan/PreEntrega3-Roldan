@@ -1,11 +1,15 @@
+body {
+  @include sizes(100%, 100vh);
+  font-family: $thefont-font-family !important;
+}
+
 .logo {
-  width: 60px;
+  @include sizes(auto, 60px);
   padding: 10px 10px 5px 5px;
 }
 
 .logo__social {
-  width: 20px;
-  height: 20px;
+  @include sizes(20px, 20px);
   margin-top: 5px;
   padding-left: 2px;
 }
@@ -14,19 +18,22 @@
   resize: none;
 }
 
+.anima {
+  animation-duration: map-get($animation, duration);
+  animation-timing-function: map-get($animation, timing);
+  animation-fill-mode: map-get($animation, fill);
+}
+
 .bounce_1 {
   animation-name: bounce1;
-  animation-duration: 450ms;
-  animation-timing-function: linear;
-  animation-fill-mode: backwards;
+  animation-duration: map-get($animation, duration2);
+  @extend .anima;
 }
 
 .bounce_2 {
   animation-name: bounce2;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: backwards;
+  animation-delay: map-get($animation, delay);
+  @extend .anima;
 }
 
 header {
@@ -36,10 +43,14 @@ header {
   z-index: 1;
 }
 
+.border--black {
+  border-top: solid black 2px;
+  border-bottom: outset black 2px;
+}
+
 nav {
   background-color: $second-color;
-  border-top: solid black 2px;
-  border-bottom: solid black 2px;
+  @extend .border--black;
 }
 
 section {
@@ -54,10 +65,10 @@ section {
 .container__alone {
   height: 30px;
   background-color: $second-color;
-  border-top: solid black 2px;
-  border-bottom: solid black 2px;
+  @extend .border--black;
 }
 
 footer {
-  background-color: #f1e5cf;
+  background-color: $first-color;
+  font-weight: map-get($fontweights, regular);
 }
